@@ -4,13 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9537405e-cfb1-4fc5-86a9-583416144931" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/RegresInTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/RegresInTests.java" afterDir="false" />
-    </list>
+    <list default="true" id="9537405e-cfb1-4fc5-86a9-583416144931" name="Changes" comment="Added five tests for regres.in" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -201,6 +195,18 @@
       <option name="presentableId" value="Default" />
       <updated>1677600106923</updated>
     </task>
+    <task id="LOCAL-00001" summary="Added five tests for regres.in">
+      <created>1677612204308</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1677612204308</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Added five tests for regres.in" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added five tests for regres.in" />
   </component>
 </project>

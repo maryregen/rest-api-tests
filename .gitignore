@@ -1,14 +1,12 @@
 .gradle
 build/
-notifications/config.json
 !gradle/wrapper/gradle-wrapper.jar
 !**/src/main/**/build/
 !**/src/test/**/build/
 
 ### IntelliJ IDEA ###
-.idea/
+.idea
 .idea/modules.xml
-
 .idea/jarRepositories.xml
 .idea/compiler.xml
 .idea/libraries/
@@ -53,3 +51,9 @@ bin/
 # Default ignored files
 /shelf/
 /workspace.xml
+### Example user template template
+### Example user template
+
+# IntelliJ project files
+out
+gen
