@@ -1,11 +1,14 @@
 .gradle
 build/
+notifications/config.json
 !gradle/wrapper/gradle-wrapper.jar
 !**/src/main/**/build/
 !**/src/test/**/build/
 
 ### IntelliJ IDEA ###
+.idea/
 .idea/modules.xml
+
 .idea/jarRepositories.xml
 .idea/compiler.xml
 .idea/libraries/
@@ -40,3 +43,13 @@ bin/
 
 ### Mac OS ###
 .DS_Store
+
+# Project exclude paths
+/.gradle/
+/build/
+/build/classes/java/main/
+/build/classes/java/test/
+
+# Default ignored files
+/shelf/
+/workspace.xml
