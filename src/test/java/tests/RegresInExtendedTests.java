@@ -1,8 +1,8 @@
 package tests;
 
-import model.lombok.CheckNameRequestBodyLombokModel;
-import model.lombok.CheckNameCreateResponseLombokModel;
-import model.lombok.CheckNameUpdateResponseLombokModel;
+import model.lombok.RequestBodyLombokModel;
+import model.lombok.CreateResponseLombokModel;
+import model.lombok.UpdateResponseLombokModel;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.Tag;
@@ -32,18 +32,18 @@ public class RegresInExtendedTests {
     @Test
     void checkNameOfNewUser() {
         step("Check name of user", () -> {
-            CheckNameRequestBodyLombokModel checkNameBody = new CheckNameRequestBodyLombokModel();
+            RequestBodyLombokModel checkNameBody = new RequestBodyLombokModel();
             checkNameBody.setName("morpheus");
             checkNameBody.setJob("leader");
 
 
-            CheckNameCreateResponseLombokModel response = given(requestSpec)
+            CreateResponseLombokModel response = given(requestSpec)
                     .body(checkNameBody)
                     .when()
                     .post()
                     .then()
                     .spec(responseSpecCode201)
-                    .extract().as(CheckNameCreateResponseLombokModel.class);
+                    .extract().as(CreateResponseLombokModel.class);
 
             assertThat(response.getName()).isEqualTo("morpheus");
         });
@@ -67,17 +67,17 @@ public class RegresInExtendedTests {
     @Test
     void setUserNewNameUsingPut() {
         step("Set user's new name using method PUT", () -> {
-            CheckNameRequestBodyLombokModel checkNameBody = new CheckNameRequestBodyLombokModel();
+            RequestBodyLombokModel checkNameBody = new RequestBodyLombokModel();
             checkNameBody.setName("john");
             checkNameBody.setJob("leader");
 
-            CheckNameUpdateResponseLombokModel response = given(requestSpec)
+            UpdateResponseLombokModel response = given(requestSpec)
                     .body(checkNameBody)
                     .when()
                     .put("/2")
                     .then()
                     .spec(responseSpecCode200)
-                    .extract().as(CheckNameUpdateResponseLombokModel.class);
+                    .extract().as(UpdateResponseLombokModel.class);
 
             assertThat(response.getName()).isEqualTo("john");
         });
@@ -88,17 +88,17 @@ public class RegresInExtendedTests {
     @Test
     void setUserNewNameUsingPatch() {
         step("Set user's new name using method PATCH", () -> {
-            CheckNameRequestBodyLombokModel checkNameBody = new CheckNameRequestBodyLombokModel();
+            RequestBodyLombokModel checkNameBody = new RequestBodyLombokModel();
             checkNameBody.setName("michael");
             checkNameBody.setJob("leader");
 
-            CheckNameUpdateResponseLombokModel response = given(requestSpec)
+            UpdateResponseLombokModel response = given(requestSpec)
                     .body(checkNameBody)
                     .when()
                     .patch("/2")
                     .then()
                     .spec(responseSpecCode200)
-                    .extract().as(CheckNameUpdateResponseLombokModel.class);
+                    .extract().as(UpdateResponseLombokModel.class);
 
             assertThat(response.getName()).isEqualTo("michael");
         });
